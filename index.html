@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home page</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Home page">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="preload" href="fonts/libre-baskerville-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="section site-header scheme-light">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand" aria-label="Kittel &amp; Kessel – Startseite">
+        <img class="site-header__logo" src="images/logo-sm.png"
+             srcset="images/logo-sm.png 350w, images/logo-sm2x.png 700w, images/logo-md.png 500w"
+             sizes="180px" alt="Kittel &amp; Kessel Logo" width="180" height="120">
+      </a>
+      <button class="burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html" class="site-nav__link">Startseite</a>
+        <a href="ueber-mich.html" class="site-nav__link">Über mich</a>
+        <a href="workshops.html" class="site-nav__link">Workshops</a>
+        <a href="kontakt.html" class="btn btn--solid">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="section hero scheme-light">
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <div class="heading reveal">
+            <span class="eyebrow">Selbsterfahrung · Selbstreflexion · Workshops</span>
+            <h1 class="title title--l1">Ein Raum, um dir selbst neu zu begegnen.</h1>
+          </div>
+          <p class="hero__lead reveal" style="--delay:.1s">Mit Kittel &amp; Kessel lade ich dich ein, innezuhalten und dem nachzugehen, was dich bewegt. Meine Workshops eröffnen unterschiedliche Wege, dich selbst, deine Beziehungen und persönliche Themen zu erkunden. Durch eigenes Erleben und gemeinsamen Austausch entsteht Raum für neue Sichtweisen – achtsam, offen und in deinem eigenen Tempo.</p>
+          <div class="hero__actions reveal" style="--delay:.2s">
+            <a href="#meine-workshops" class="btn btn--solid">Workshops entdecken</a>
+            <a href="kontakt.html" class="btn btn--outline">Kontakt aufnehmen</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--scale" style="--delay:.15s">
+          <div class="hero__panel">
+            <img class="hero__logo" src="images/logo-md2x.png"
+                 srcset="images/logo-sm.png 350w, images/logo-md.png 500w, images/logo-sm2x.png 700w, images/logo-md2x.png 1000w, images/logo-lg.png 1280w, images/logo-xlg.png 1920w"
+                 sizes="(max-width: 900px) 440px, 620px" alt="Kittel &amp; Kessel Logo" width="1280" height="853">
+          </div>
+        </div>
+        <div class="disclaimer hero__note reveal" lang="de" style="--delay:.3s">
+          <p>Die Workshops und Aufstellungen von Kittel &amp; Kessel dienen der Selbsterfahrung und Selbstreflexion. Sie umfassen keine medizinische oder psychotherapeutische Diagnostik oder Behandlung und ersetzen diese nicht.</p>
+          <p>Bilder, Empfindungen und Aussagen aus den Aufstellungen sind subjektive Erfahrungen. Sie sind keine diagnostischen Befunde und kein Nachweis für Krankheitsursachen. Eine Heilung oder Linderung von Erkrankungen wird nicht versprochen.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Worum es geht -->
+    <section class="section ways scheme-green">
+      <div class="ways__inner">
+        <div class="heading">
+          <span class="eyebrow">Worum es geht</span>
+          <h2 class="title title--l2">Drei Wege nach innen</h2>
+        </div>
+        <div class="ways__grid">
+          <div class="reveal">
+            <div class="way-card">
+              <span class="way-card__num">01</span>
+              <h3 class="way-card__title">Innehalten</h3>
+              <p class="way-card__text">Sich Zeit nehmen für das, was gerade bewegt – und dem mit Neugier nachgehen, ohne Druck und im eigenen Tempo.</p>
+            </div>
+          </div>
+          <div class="reveal" style="--delay:.1s">
+            <div class="way-card">
+              <span class="way-card__num">02</span>
+              <h3 class="way-card__title">Bedürfnisse wahrnehmen</h3>
+              <p class="way-card__text">Was brauche ich eigentlich? Selbstreflexion hilft, eigene Bedürfnisse klarer zu erkennen und ernst zu nehmen.</p>
+            </div>
+          </div>
+          <div class="reveal" style="--delay:.2s">
+            <div class="way-card">
+              <span class="way-card__num">03</span>
+              <h3 class="way-card__title">Neue Perspektiven gewinnen</h3>
+              <p class="way-card__text">Im Dialog und im Perspektivwechsel entstehen oft überraschende Einsichten – auf dich selbst und auf das, was dich bewegt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meine Workshops -->
+    <section id="meine-workshops" class="section workshops scheme-light">
+      <div class="workshops__inner">
+        <div class="heading">
+          <span class="eyebrow">Überblick</span>
+          <h2 class="title title--l2">Meine Workshops</h2>
+        </div>
+        <div class="workshops__grid">
+          <div class="workshops__cell reveal">
+            <div class="workshop-card">
+              <span class="workshop-card__tag">Online-Workshop</span>
+              <h3 class="workshop-card__title">Archetypen im Dialog</h3>
+              <p class="workshop-card__text" lang="de">In uns wirken verschiedene innere Rollen und Figuren. In diesem Workshop lernst du sie kennen, gibst ihnen eine Stimme und lässt sie miteinander ins Gespräch kommen – so können persönliche Bedürfnisse sichtbarer werden.</p>
+              <div class="workshop-card__btn"><a href="workshops.html#archetypen" class="btn btn--outline">Mehr erfahren</a></div>
+            </div>
+          </div>
+          <div class="workshops__cell reveal" style="--delay:.1s">
+            <div class="workshop-card">
+              <span class="workshop-card__tag">Aufstellungen</span>
+              <h3 class="workshop-card__title">Symptomaufstellungen</h3>
+              <p class="workshop-card__text" lang="de">Wie erlebe ich meine körperlichen Beschwerden, und wie gehe ich mit ihnen um? Mit meinem fachärztlichen Hintergrund in der Psychosomatik begleite ich dich dabei, dein Körpererleben im Zusammenhang mit deiner persönlichen Lebenssituation zu erkunden. In der Aufstellung können Symptome, Belastungen, Beziehungen und Ressourcen räumlich dargestellt werden. So entsteht Raum für Selbstreflexion und neue Perspektiven auf den Umgang mit Beschwerden.</p>
+              <div class="workshop-card__btn"><a href="workshops.html#symptomaufstellungen" class="btn btn--outline">Mehr erfahren</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="disclaimer workshops__note" lang="de">
+          <p>Die Workshops und Aufstellungen von Kittel &amp; Kessel dienen der Selbsterfahrung und Selbstreflexion. Sie umfassen keine medizinische oder psychotherapeutische Diagnostik oder Behandlung und ersetzen diese nicht.</p>
+          <p>Bilder, Empfindungen und Aussagen aus den Aufstellungen sind subjektive Erfahrungen. Sie sind keine diagnostischen Befunde und kein Nachweis für Krankheitsursachen. Eine Heilung oder Linderung von Erkrankungen wird nicht versprochen.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section site-footer scheme-dark">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__name">Kittel &amp; Kessel</span>
+        <p class="site-footer__tag">Kittel &amp; Kessel – Selbsterfahrung, Selbstreflexion und Workshops mit <span class="nowrap">Dr.medic/ UMF Bukarest Oana Walther</span>.</p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="index.html" class="site-footer__link">Startseite</a>
+        <a href="ueber-mich.html" class="site-footer__link">Über mich</a>
+        <a href="workshops.html" class="site-footer__link">Workshops</a>
+        <a href="kontakt.html" class="site-footer__link">Kontakt</a>
+        <a href="impressum.html" class="site-footer__link">Impressum</a>
+        <a href="datenschutz.html" class="site-footer__link">Datenschutz</a>
+      </nav>
+    </div>
+    <div class="site-footer__hint" lang="de">
+      <p>Die Workshops und Aufstellungen von Kittel &amp; Kessel dienen der Selbsterfahrung und Selbstreflexion. Sie umfassen keine medizinische oder psychotherapeutische Diagnostik oder Behandlung und ersetzen diese nicht.</p>
+      <p>Bilder, Empfindungen und Aussagen aus den Aufstellungen sind subjektive Erfahrungen. Sie sind keine diagnostischen Befunde und kein Nachweis für Krankheitsursachen. Eine Heilung oder Linderung von Erkrankungen wird nicht versprochen.</p>
+    </div>
+    <div class="site-footer__bottom">© 2026 Kittel &amp; Kessel · Dr.medic/ UMF Bukarest Oana Walther</div>
+  </footer>
+</body>
+</html>
