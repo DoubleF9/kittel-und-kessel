@@ -197,6 +197,28 @@ img { max-width: none; }
   transition: right .25s ease;
 }
 .site-nav__link:hover::after { right: 0; }
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-text);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: .04em;
+}
+.lang-switch span { color: rgba(var(--text), 0.35); }
+.lang-switch a {
+  color: rgba(var(--text), 0.55);
+  text-decoration: none;
+  padding: 4px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color .2s ease;
+}
+.lang-switch a:hover { color: rgb(var(--text)); }
+.lang-switch a[aria-current="page"] {
+  color: rgb(var(--text));
+  border-bottom-color: var(--green);
+}
 .burger {
   display: none;
   background: none;
@@ -661,6 +683,198 @@ img { max-width: none; }
   .legal__body h2 { font-size: 20px; }
 }
 
+/* ---------- Workshops: Termine & Anmeldung ---------- */
+.ws-intro { padding: 88px 24px 56px; }
+.ws-intro__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.ws-intro__lead {
+  margin: 0;
+  max-width: 760px;
+  font-family: var(--font-text);
+  font-size: 19px;
+  line-height: 1.65;
+  color: rgba(var(--text), 0.82);
+}
+.ws-intro__lead strong { color: rgb(var(--text)); }
+.notice {
+  margin: 0;
+  max-width: 760px;
+  padding: 16px 20px;
+  border-radius: 0 14px 14px 0;
+  border-left: 5px solid var(--green);
+  background: var(--light);
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--navy);
+}
+.ws-block { padding: 80px 24px; scroll-margin-top: 24px; }
+.ws-block__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: start;
+}
+.ws-block__info { display: flex; flex-direction: column; gap: 22px; }
+.ws-block__text {
+  margin: 0;
+  font-family: var(--font-text);
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(var(--text), 0.82);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+.ws-note { padding: 0 24px 88px; }
+.ws-note__inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 22px 28px;
+  border-left: 6px solid var(--green);
+  border-radius: 0 20px 20px 0;
+}
+
+.course-list { display: flex; flex-direction: column; gap: 16px; }
+.course-list__empty {
+  margin: 0;
+  padding: 24px 28px;
+  border-radius: 20px;
+  background: var(--white);
+  border: 1px dashed #0B2A5B33;
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--navy);
+}
+.course-list__empty a { color: var(--navy); font-weight: 700; text-decoration-color: var(--green); }
+.course {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 24px;
+  align-items: center;
+  padding: 24px 28px;
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--navy);
+  border: 1px solid #0B2A5B14;
+  box-shadow: 0 6px 20px #0B2A5B0D;
+}
+.scheme-light .course { background: var(--light); box-shadow: none; }
+.course.is-inactive { opacity: .7; }
+.course__date {
+  width: 82px;
+  padding: 12px 0;
+  border-radius: 16px;
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+.course__day { font-family: var(--font-head); font-size: 30px; font-weight: 700; }
+.course__month { font-family: var(--font-text); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; margin-top: 6px; }
+.course__body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.course__when { margin: 0; font-family: var(--font-head); font-size: 17px; font-weight: 700; line-height: 1.4; }
+.course__meta, .course__status, .course__deadline {
+  margin: 0;
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(11, 42, 91, 0.8);
+}
+.course__deadline { font-size: 13px; color: rgba(11, 42, 91, 0.6); }
+.course__status--muted { font-weight: 700; }
+.course__ok { color: #1E7F31; font-weight: 700; }
+.course__action { justify-self: end; }
+.course__btn { padding: 12px 24px; white-space: nowrap; }
+.course__badge {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid #0B2A5B33;
+  font-family: var(--font-text);
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+}
+.seats { display: flex; gap: 6px; margin: 4px 0 2px; }
+.seats__dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  background: transparent;
+}
+.seats__dot.is-taken { background: var(--green); }
+/* small gap after the 4th seat marks the minimum number of participants */
+.seats__dot.is-min { margin-right: 8px; }
+
+.booking-dialog {
+  width: min(560px, calc(100vw - 32px));
+  max-height: calc(100vh - 32px);
+  padding: 32px;
+  border: 0;
+  border-radius: 28px;
+  border-top: 4px solid var(--green);
+  background: var(--light);
+  color: var(--navy);
+  overflow: auto;
+}
+.booking-dialog::backdrop { background: rgba(11, 42, 91, 0.55); }
+.booking-dialog__head { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.booking-dialog__title { margin: 0; font-family: var(--font-head); font-size: 28px; line-height: 1.2; }
+.booking-dialog__close {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--navy);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+}
+.booking-dialog__close:hover { background: var(--white); color: var(--green); }
+.booking-dialog__summary {
+  margin: 18px 0 22px;
+  padding: 14px 18px;
+  border-left: 4px solid var(--green);
+  border-radius: 0 12px 12px 0;
+  background: #fff;
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.booking-form { display: flex; flex-direction: column; gap: 16px; }
+.booking-form__hint { margin: 0; font-family: var(--font-text); font-size: 14px; line-height: 1.55; color: rgba(11, 42, 91, 0.75); }
+.form__optional { font-weight: 400; color: rgba(11, 42, 91, 0.6); }
+.booking-dialog__result { display: flex; flex-direction: column; gap: 22px; align-items: flex-start; }
+.booking-dialog__result p { margin: 0; font-family: var(--font-head); font-size: 20px; line-height: 1.5; }
+
+@media (max-width: 900px) {
+  .ws-intro { padding: 56px 20px 40px; }
+  .ws-block { padding: 56px 20px; }
+  .ws-block__inner { grid-template-columns: 1fr; gap: 32px; }
+  .ws-note { padding: 0 20px 64px; }
+}
+@media (max-width: 560px) {
+  .course { grid-template-columns: auto 1fr; padding: 20px; gap: 16px 18px; }
+  .course__date { width: 68px; }
+  .course__day { font-size: 24px; }
+  .course__action { grid-column: 1 / -1; justify-self: stretch; }
+  .course__btn { width: 100%; }
+  .booking-dialog { padding: 22px; }
+}
+
 /* ---------- Footer ---------- */
 .site-footer { padding: 72px 24px 32px; }
 .site-footer__inner {
@@ -680,6 +894,20 @@ img { max-width: none; }
   line-height: 1.6;
   color: rgba(var(--text), 0.75);
 }
+.site-footer__contact {
+  margin: 0;
+  font-family: var(--font-text);
+  font-size: 15px;
+  color: rgba(var(--text), 0.75);
+}
+.site-footer__contact a {
+  color: rgba(var(--text), 0.95);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--green);
+  text-underline-offset: 3px;
+}
+.site-footer__contact a:hover { color: var(--green); }
 .nowrap { white-space: nowrap; }
 .site-footer__nav {
   display: grid;

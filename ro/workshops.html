@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ateliere și date</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ateliere și date">
+  <meta property="og:locale" content="ro_RO">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+  <link rel="preload" href="../fonts/libre-baskerville-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/nunito-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="alternate" hreflang="de" href="../workshops.html">
+  <link rel="alternate" hreflang="ro" href="workshops.html">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/courses-data.js" defer></script>
+  <script src="../js/booking.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Salt la conținut</a>
+
+  <header class="section site-header scheme-light">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand" aria-label="Kittel &amp; Kessel – Pagina principală">
+        <img class="site-header__logo" src="../images/logo-sm.png"
+             srcset="../images/logo-sm.png 350w, ../images/logo-sm2x.png 700w, ../images/logo-md.png 500w"
+             sizes="180px" alt="Logo Kittel &amp; Kessel" width="180" height="120">
+      </a>
+      <button class="burger" aria-label="Meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html" class="site-nav__link">Acasă</a>
+        <a href="ueber-mich.html" class="site-nav__link">Despre mine</a>
+        <a href="workshops.html" class="site-nav__link">Ateliere</a>
+        <a href="kontakt.html" class="btn btn--solid">Contact</a>
+        <div class="lang-switch" aria-label="Alege limba"><a href="../workshops.html" hreflang="de" lang="de">DE</a><span aria-hidden="true">|</span><a href="workshops.html" hreflang="ro" lang="ro" aria-current="page">RO</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section ws-intro scheme-light">
+      <div class="ws-intro__inner">
+        <div class="heading reveal">
+          <span class="eyebrow">Date și înscriere</span>
+          <h1 class="title title--l1">Ateliere</h1>
+        </div>
+        <p class="ws-intro__lead reveal" style="--delay:.1s">Atelierele mele au loc în grupuri mici: cu <strong>cel mult 6 participanți</strong>, ca să rămână suficient spațiu pentru fiecare. O dată se ține de la <strong>4 înscrieri</strong>. Dacă numărul minim nu este atins până la termenul de înscriere, anulez data și te anunț din timp.</p>
+        <p class="notice" data-booking-notice role="status" hidden></p>
+      </div>
+    </section>
+
+    <section id="archetypen" class="section ws-block scheme-green">
+      <div class="ws-block__inner">
+        <div class="ws-block__info">
+          <div class="heading">
+            <span class="eyebrow">Atelier online</span>
+            <h2 class="title title--l2">Arhetipuri în dialog</h2>
+          </div>
+          <p class="ws-block__text">În noi lucrează diferite roluri și figuri interioare. În acest atelier le cunoști, le dai o voce și le lași să intre în dialog unele cu altele – astfel, nevoile personale pot deveni mai vizibile.</p>
+        </div>
+        <div class="course-list" data-course-list="archetypen" aria-live="polite">
+          <noscript><p class="course-list__empty">Pentru lista de date este nevoie de JavaScript. Pentru înscriere, scrie-mi prin <a href="kontakt.html">pagina de contact</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section id="symptomaufstellungen" class="section ws-block scheme-light">
+      <div class="ws-block__inner">
+        <div class="ws-block__info">
+          <div class="heading">
+            <span class="eyebrow">Constelații</span>
+            <h2 class="title title--l2">Constelații ale simptomelor</h2>
+          </div>
+          <p class="ws-block__text">Cum îmi trăiesc simptomele corporale și cum mă raportez la ele? Cu experiența mea de medic specialist în medicină psihosomatică, te însoțesc în explorarea trăirii corporale în legătură cu situația ta personală de viață. În constelație, simptomele, poverile, relațiile și resursele pot fi reprezentate în spațiu. Astfel se creează loc pentru autoreflecție și pentru perspective noi asupra felului în care te raportezi la simptome.</p>
+        </div>
+        <div class="course-list" data-course-list="symptomaufstellungen" aria-live="polite">
+          <noscript><p class="course-list__empty">Pentru lista de date este nevoie de JavaScript. Pentru înscriere, scrie-mi prin <a href="kontakt.html">pagina de contact</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ws-note scheme-light">
+      <div class="disclaimer ws-note__inner">
+        <p>Atelierele și constelațiile Kittel &amp; Kessel servesc autocunoașterii și autoreflecției. Ele nu includ diagnostic sau tratament medical ori psihoterapeutic și nu le înlocuiesc.</p>
+        <p>Imaginile, senzațiile și afirmațiile apărute în constelații sunt experiențe subiective. Ele nu sunt constatări diagnostice și nici dovezi privind cauzele unor boli. Nu se promite vindecarea sau ameliorarea vreunei afecțiuni.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="booking-dialog" aria-labelledby="booking-title">
+    <div class="booking-dialog__head">
+      <h2 id="booking-title" class="booking-dialog__title">Înscriere</h2>
+      <button type="button" class="booking-dialog__close" data-booking-close aria-label="Închide">×</button>
+    </div>
+    <p class="booking-dialog__summary" data-booking-summary></p>
+    <form class="booking-form" novalidate>
+      <label class="form__field">Nume
+        <input class="form__input" name="name" autocomplete="name">
+        <span class="form__error" data-error="name"></span>
+      </label>
+      <label class="form__field">E-mail
+        <input class="form__input" name="email" type="email" autocomplete="email">
+        <span class="form__error" data-error="email"></span>
+      </label>
+      <label class="form__field">Telefon <span class="form__optional">(opțional)</span>
+        <input class="form__input" name="phone" type="tel" autocomplete="tel">
+      </label>
+      <label class="form__field">Mesaj <span class="form__optional">(opțional)</span>
+        <textarea class="form__input" name="message" rows="3"></textarea>
+      </label>
+      <p class="booking-form__hint">Atelierul are loc de la 4 participanți (cel mult 6). Te rog să nu trimiți prin acest formular diagnostice, rezultate medicale sau informații detaliate despre sănătatea ta.</p>
+      <div>
+        <label class="form__consent"><input type="checkbox" name="consent"><span>Sunt de acord ca datele mele să fie prelucrate în vederea înscrierii (vezi <a href="datenschutz.html">Protecția datelor</a>).</span></label>
+        <span class="form__error" data-error="consent"></span>
+      </div>
+      <input class="form__hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <span class="form__error" data-error="form" role="alert"></span>
+      <div><button type="submit" class="btn btn--solid">Trimite înscrierea</button></div>
+    </form>
+    <div class="booking-dialog__result" data-booking-result role="status" hidden>
+      <p></p>
+      <button type="button" class="btn btn--outline" data-booking-close>Închide</button>
+    </div>
+  </dialog>
+
+  <footer class="section site-footer scheme-dark">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__name">Kittel &amp; Kessel</span>
+        <p class="site-footer__tag">Kittel &amp; Kessel – autocunoaștere, autoreflecție și ateliere cu <span class="nowrap">Dr.medic/ UMF Bukarest Oana Walther</span>.</p>
+        <p class="site-footer__contact">E-mail: <a href="mailto:kontakt@kittelundkessel.de">kontakt@kittelundkessel.de</a></p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="index.html" class="site-footer__link">Acasă</a>
+        <a href="ueber-mich.html" class="site-footer__link">Despre mine</a>
+        <a href="workshops.html" class="site-footer__link">Ateliere</a>
+        <a href="kontakt.html" class="site-footer__link">Contact</a>
+        <a href="impressum.html" class="site-footer__link">Date legale (Impressum)</a>
+        <a href="datenschutz.html" class="site-footer__link">Protecția datelor</a>
+      </nav>
+    </div>
+    <div class="site-footer__hint">
+      <p>Atelierele și constelațiile Kittel &amp; Kessel servesc autocunoașterii și autoreflecției. Ele nu includ diagnostic sau tratament medical ori psihoterapeutic și nu le înlocuiesc.</p>
+      <p>Imaginile, senzațiile și afirmațiile apărute în constelații sunt experiențe subiective. Ele nu sunt constatări diagnostice și nici dovezi privind cauzele unor boli. Nu se promite vindecarea sau ameliorarea vreunei afecțiuni.</p>
+    </div>
+    <div class="site-footer__bottom">© 2026 Kittel &amp; Kessel · Dr.medic/ UMF Bukarest Oana Walther</div>
+  </footer>
+</body>
+</html>

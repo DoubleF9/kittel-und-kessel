@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact">
+  <meta property="og:locale" content="ro_RO">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32.png">
+  <link rel="preload" href="../fonts/libre-baskerville-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/nunito-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="alternate" hreflang="de" href="../kontakt.html">
+  <link rel="alternate" hreflang="ro" href="kontakt.html">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Salt la conținut</a>
+
+  <header class="section site-header scheme-light">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand" aria-label="Kittel &amp; Kessel – Pagina principală">
+        <img class="site-header__logo" src="../images/logo-sm.png"
+             srcset="../images/logo-sm.png 350w, ../images/logo-sm2x.png 700w, ../images/logo-md.png 500w"
+             sizes="180px" alt="Logo Kittel &amp; Kessel" width="180" height="120">
+      </a>
+      <button class="burger" aria-label="Meniu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html" class="site-nav__link">Acasă</a>
+        <a href="ueber-mich.html" class="site-nav__link">Despre mine</a>
+        <a href="workshops.html" class="site-nav__link">Ateliere</a>
+        <a href="kontakt.html" class="btn btn--solid">Contact</a>
+        <div class="lang-switch" aria-label="Alege limba"><a href="../kontakt.html" hreflang="de" lang="de">DE</a><span aria-hidden="true">|</span><a href="kontakt.html" hreflang="ro" lang="ro" aria-current="page">RO</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section contact scheme-dark">
+      <div class="contact__inner">
+        <div class="contact__intro">
+          <h1 class="contact__title">Contact</h1>
+          <span class="bar"></span>
+          <p class="contact__text">Pentru întrebări despre atelierele mele și pentru înscriere mă poți contacta telefonic sau prin e-mail.</p>
+          <address class="contact__address">
+            <strong>Kittel &amp; Kessel · Dr.medic UMF Bukarest Oana Walther</strong>
+            <span>Maxstraße 24</span>
+            <span>93093 Donaustauf, Germania</span>
+          </address>
+          <ul class="contact__list">
+            <li><span class="contact__label">Telefon:</span> <a class="contact__link" href="tel:+4994039675710">+49 9403 9675710</a></li>
+            <li><span class="contact__label">E-mail:</span> <a class="contact__link" href="mailto:kontakt@kittelundkessel.de">kontakt@kittelundkessel.de</a></li>
+            <li><span class="contact__label">Site:</span> <a class="contact__link" href="https://www.kittelundkessel.de">www.kittelundkessel.de</a></li>
+          </ul>
+          <p class="contact__closing">Mă bucur să primesc mesajul tău.</p>
+        </div>
+        <form class="form" novalidate>
+          <label class="form__field">Nume
+            <input class="form__input" name="name" autocomplete="name">
+            <span class="form__error" data-error="name"></span>
+          </label>
+          <label class="form__field">E-mail
+            <input class="form__input" name="email" type="email" autocomplete="email">
+            <span class="form__error" data-error="email"></span>
+          </label>
+          <label class="form__field">Mesaj
+            <textarea class="form__input" name="message" rows="6"></textarea>
+            <span class="form__error" data-error="message"></span>
+          </label>
+          <div>
+            <label class="form__consent"><input type="checkbox" name="consent"><span>Sunt de acord ca datele mele să fie prelucrate în vederea soluționării solicitării mele (vezi <a href="datenschutz.html">Protecția datelor</a>).</span></label>
+            <span class="form__error" data-error="consent"></span>
+          </div>
+          <input class="form__hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div><button type="submit" class="btn btn--solid">Trimite mesajul</button></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="section site-footer scheme-dark">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__name">Kittel &amp; Kessel</span>
+        <p class="site-footer__tag">Kittel &amp; Kessel – autocunoaștere, autoreflecție și ateliere cu <span class="nowrap">Dr.medic/ UMF Bukarest Oana Walther</span>.</p>
+        <p class="site-footer__contact">E-mail: <a href="mailto:kontakt@kittelundkessel.de">kontakt@kittelundkessel.de</a></p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="index.html" class="site-footer__link">Acasă</a>
+        <a href="ueber-mich.html" class="site-footer__link">Despre mine</a>
+        <a href="workshops.html" class="site-footer__link">Ateliere</a>
+        <a href="kontakt.html" class="site-footer__link">Contact</a>
+        <a href="impressum.html" class="site-footer__link">Date legale (Impressum)</a>
+        <a href="datenschutz.html" class="site-footer__link">Protecția datelor</a>
+      </nav>
+    </div>
+    <div class="site-footer__hint">
+      <p>Atelierele și constelațiile Kittel &amp; Kessel servesc autocunoașterii și autoreflecției. Ele nu includ diagnostic sau tratament medical ori psihoterapeutic și nu le înlocuiesc.</p>
+      <p>Imaginile, senzațiile și afirmațiile apărute în constelații sunt experiențe subiective. Ele nu sunt constatări diagnostice și nici dovezi privind cauzele unor boli. Nu se promite vindecarea sau ameliorarea vreunei afecțiuni.</p>
+    </div>
+    <div class="site-footer__bottom">© 2026 Kittel &amp; Kessel · Dr.medic/ UMF Bukarest Oana Walther</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshops &amp; Termine</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Workshops &amp; Termine">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="preload" href="fonts/libre-baskerville-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/nunito-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="alternate" hreflang="de" href="workshops.html">
+  <link rel="alternate" hreflang="ro" href="ro/workshops.html">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/courses-data.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+  <header class="section site-header scheme-light">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand" aria-label="Kittel &amp; Kessel – Startseite">
+        <img class="site-header__logo" src="images/logo-sm.png"
+             srcset="images/logo-sm.png 350w, images/logo-sm2x.png 700w, images/logo-md.png 500w"
+             sizes="180px" alt="Kittel &amp; Kessel Logo" width="180" height="120">
+      </a>
+      <button class="burger" aria-label="Menü" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav">
+        <a href="index.html" class="site-nav__link">Startseite</a>
+        <a href="ueber-mich.html" class="site-nav__link">Über mich</a>
+        <a href="workshops.html" class="site-nav__link">Workshops</a>
+        <a href="kontakt.html" class="btn btn--solid">Kontakt</a>
+        <div class="lang-switch" aria-label="Sprache wählen"><a href="workshops.html" hreflang="de" lang="de" aria-current="page">DE</a><span aria-hidden="true">|</span><a href="ro/workshops.html" hreflang="ro" lang="ro">RO</a></div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section ws-intro scheme-light">
+      <div class="ws-intro__inner">
+        <div class="heading reveal">
+          <span class="eyebrow">Termine &amp; Anmeldung</span>
+          <h1 class="title title--l1">Workshops</h1>
+        </div>
+        <p class="ws-intro__lead reveal" style="--delay:.1s">Meine Workshops finden in kleinen Gruppen statt: mit <strong>höchstens 6 Teilnehmenden</strong>, damit für alle genug Raum bleibt. Ein Termin findet ab <strong>4 Anmeldungen</strong> statt. Kommt die Mindestzahl bis zum Anmeldeschluss nicht zustande, sage ich den Termin ab und informiere dich rechtzeitig.</p>
+        <p class="notice" data-booking-notice role="status" hidden></p>
+      </div>
+    </section>
+
+    <section id="archetypen" class="section ws-block scheme-green">
+      <div class="ws-block__inner">
+        <div class="ws-block__info">
+          <div class="heading">
+            <span class="eyebrow">Online-Workshop</span>
+            <h2 class="title title--l2">Archetypen im Dialog</h2>
+          </div>
+          <p class="ws-block__text">In uns wirken verschiedene innere Rollen und Figuren. In diesem Workshop lernst du sie kennen, gibst ihnen eine Stimme und lässt sie miteinander ins Gespräch kommen – so können persönliche Bedürfnisse sichtbarer werden.</p>
+        </div>
+        <div class="course-list" data-course-list="archetypen" aria-live="polite">
+          <noscript><p class="course-list__empty">Für die Terminübersicht wird JavaScript benötigt. Für eine Anmeldung schreib mir gern über die <a href="kontakt.html">Kontaktseite</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section id="symptomaufstellungen" class="section ws-block scheme-light">
+      <div class="ws-block__inner">
+        <div class="ws-block__info">
+          <div class="heading">
+            <span class="eyebrow">Aufstellungen</span>
+            <h2 class="title title--l2">Symptomaufstellungen</h2>
+          </div>
+          <p class="ws-block__text">Wie erlebe ich meine körperlichen Beschwerden, und wie gehe ich mit ihnen um? Mit meinem fachärztlichen Hintergrund in der Psychosomatik begleite ich dich dabei, dein Körpererleben im Zusammenhang mit deiner persönlichen Lebenssituation zu erkunden. In der Aufstellung können Symptome, Belastungen, Beziehungen und Ressourcen räumlich dargestellt werden. So entsteht Raum für Selbstreflexion und neue Perspektiven auf den Umgang mit Beschwerden.</p>
+        </div>
+        <div class="course-list" data-course-list="symptomaufstellungen" aria-live="polite">
+          <noscript><p class="course-list__empty">Für die Terminübersicht wird JavaScript benötigt. Für eine Anmeldung schreib mir gern über die <a href="kontakt.html">Kontaktseite</a>.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ws-note scheme-light">
+      <div class="disclaimer ws-note__inner">
+        <p>Die Workshops und Aufstellungen von Kittel &amp; Kessel dienen der Selbsterfahrung und Selbstreflexion. Sie umfassen keine medizinische oder psychotherapeutische Diagnostik oder Behandlung und ersetzen diese nicht.</p>
+        <p>Bilder, Empfindungen und Aussagen aus den Aufstellungen sind subjektive Erfahrungen. Sie sind keine diagnostischen Befunde und kein Nachweis für Krankheitsursachen. Eine Heilung oder Linderung von Erkrankungen wird nicht versprochen.</p>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="booking-dialog" aria-labelledby="booking-title">
+    <div class="booking-dialog__head">
+      <h2 id="booking-title" class="booking-dialog__title">Anmeldung</h2>
+      <button type="button" class="booking-dialog__close" data-booking-close aria-label="Schließen">×</button>
+    </div>
+    <p class="booking-dialog__summary" data-booking-summary></p>
+    <form class="booking-form" novalidate>
+      <label class="form__field">Name
+        <input class="form__input" name="name" autocomplete="name">
+        <span class="form__error" data-error="name"></span>
+      </label>
+      <label class="form__field">E-Mail
+        <input class="form__input" name="email" type="email" autocomplete="email">
+        <span class="form__error" data-error="email"></span>
+      </label>
+      <label class="form__field">Telefon <span class="form__optional">(optional)</span>
+        <input class="form__input" name="phone" type="tel" autocomplete="tel">
+      </label>
+      <label class="form__field">Nachricht <span class="form__optional">(optional)</span>
+        <textarea class="form__input" name="message" rows="3"></textarea>
+      </label>
+      <p class="booking-form__hint">Der Workshop findet ab 4 Teilnehmenden statt (höchstens 6). Bitte schick über dieses Formular keine Diagnosen, Befunde oder ausführlichen Gesundheitsinformationen.</p>
+      <div>
+        <label class="form__consent"><input type="checkbox" name="consent"><span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anmeldung verarbeitet werden (siehe <a href="datenschutz.html">Datenschutz</a>).</span></label>
+        <span class="form__error" data-error="consent"></span>
+      </div>
+      <input class="form__hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <span class="form__error" data-error="form" role="alert"></span>
+      <div><button type="submit" class="btn btn--solid">Anmeldung absenden</button></div>
+    </form>
+    <div class="booking-dialog__result" data-booking-result role="status" hidden>
+      <p></p>
+      <button type="button" class="btn btn--outline" data-booking-close>Schließen</button>
+    </div>
+  </dialog>
+
+  <footer class="section site-footer scheme-dark">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__name">Kittel &amp; Kessel</span>
+        <p class="site-footer__tag">Kittel &amp; Kessel – Selbsterfahrung, Selbstreflexion und Workshops mit <span class="nowrap">Dr.medic/ UMF Bukarest Oana Walther</span>.</p>
+        <p class="site-footer__contact">E-Mail: <a href="mailto:kontakt@kittelundkessel.de">kontakt@kittelundkessel.de</a></p>
+      </div>
+      <nav class="site-footer__nav">
+        <a href="index.html" class="site-footer__link">Startseite</a>
+        <a href="ueber-mich.html" class="site-footer__link">Über mich</a>
+        <a href="workshops.html" class="site-footer__link">Workshops</a>
+        <a href="kontakt.html" class="site-footer__link">Kontakt</a>
+        <a href="impressum.html" class="site-footer__link">Impressum</a>
+        <a href="datenschutz.html" class="site-footer__link">Datenschutz</a>
+      </nav>
+    </div>
+    <div class="site-footer__hint" lang="de">
+      <p>Die Workshops und Aufstellungen von Kittel &amp; Kessel dienen der Selbsterfahrung und Selbstreflexion. Sie umfassen keine medizinische oder psychotherapeutische Diagnostik oder Behandlung und ersetzen diese nicht.</p>
+      <p>Bilder, Empfindungen und Aussagen aus den Aufstellungen sind subjektive Erfahrungen. Sie sind keine diagnostischen Befunde und kein Nachweis für Krankheitsursachen. Eine Heilung oder Linderung von Erkrankungen wird nicht versprochen.</p>
+    </div>
+    <div class="site-footer__bottom">© 2026 Kittel &amp; Kessel · Dr.medic/ UMF Bukarest Oana Walther</div>
+  </footer>
+</body>
+</html>
