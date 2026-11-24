@@ -8,6 +8,10 @@ Static website (HTML, CSS, a little JS). No build step: open `index.html` or ser
 - `js/courses-data.js` – the workshop dates, maintained by hand for now
 - `fonts/`, `images/` – self-hosted fonts and logo
 
+**Cache:** GitHub Pages lets browsers cache files for 10 minutes. Every page loads CSS/JS as
+`styles.css?v=2`, `main.js?v=2` etc. After changing a CSS or JS file, raise that number in all
+HTML files (`ro/` too) so visitors get the new version right away.
+
 ## Languages (DE / RO)
 - German pages live in the root, Romanian translations in `ro/` with the **same file names**
   (e.g. `kontakt.html` ↔ `ro/kontakt.html`).
